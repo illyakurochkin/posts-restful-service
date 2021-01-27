@@ -1,0 +1,125 @@
+{
+	"info": {
+		"_postman_id": "b5224991-d1fd-4a9b-83a0-28afb0c2967c",
+		"name": "test-posts",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getAllPosts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/posts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createPost",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Second Pod Title\",\n    \"content\": \"First Pod Content\",\n    \"date\": \"2021-01-20 14:00:00\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/posts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updatePostById",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"New Post Title\",\n    \"content\": \"Updated post content\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/posts/60118707818daa0ffb426cca",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"posts",
+						"60118707818daa0ffb426cca"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deletePostById",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/posts/60118696818daa0ffb426cc9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"posts",
+						"60118696818daa0ffb426cc9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getPostById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/posts/60118696818daa0ffb426cc9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"posts",
+						"60118696818daa0ffb426cc9"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
